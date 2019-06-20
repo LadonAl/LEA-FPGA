@@ -25,7 +25,7 @@ The shifted 32-bit groups are then fed into processing blocks. Each of these blo
 As mentioned, the processing blocks are resposible of generating vectors of 32-bit data.
 This module follows the following formula (the c over the shifting operator indicates circular shifting):
 
-![img](http://bit.ly/2Kt4v5L)
+![img](http://www.sciweavers.org/tex2img.php?eq=ROL_1%28%28A%20%2B%20ROL_i%28%5Cdelta%5Bi%5C%20mod%5C%204%5D%29%29%5C%20mod%5C%202%5E%7B32%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 Please note that the formulas are different for B, C , and D. 
 

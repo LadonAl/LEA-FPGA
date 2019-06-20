@@ -17,7 +17,7 @@ KeyGen or the key generator is respinsible of producing 24 192-bit round keys ba
 
 The block diagram could be found below.
 
-![alt text](https://raw.githubusercontent.com/LadonAl/LEA-FPGA/master/LEA-FPGA-KeyGenerator.png?token=AFVCXHIUV3MIH7H76BH4ETC5BN63S)
+![alt text](https://raw.githubusercontent.com/LadonAl/LEA-FPGA/master/LEA-FPGA-ProcessA.png?token=AFVCXHJGQKGLFQIEEWGWG2C5BOB76)
 
 The shifted 32-bit groups are then fed into processing blocks. Each of these blocks prodecue a vector of 32-bit parts that are letar fed into a rewiring block that groups the vector elements into 24 different 192-bit outputs (round keys)
 
@@ -25,7 +25,7 @@ The shifted 32-bit groups are then fed into processing blocks. Each of these blo
 As mentioned, the processing blocks are resposible of generating vectors of 32-bit data.
 This module follows the following formula (the c over the shifting operator indicates circular shifting):
 
-![img](http://www.sciweavers.org/tex2img.php?eq=%5C%7B%5BA%20%2B%20%28%5Cdelta%20%5Bi%5C%20mod%5C%204%5D%5C%20%3C%3C%5EC%20i%29%5D%5C%20mod%5C%202%5E%7B32%7D%5C%7D%5C%20%3C%3C%5Ec%201&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![img](http://bit.ly/2Kt4v5L)
 
 Please note that the formulas are different for B, C , and D. 
 

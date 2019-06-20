@@ -17,7 +17,7 @@ KeyGen or the key generator is respinsible of producing 24 192-bit round keys ba
 
 The block diagram could be found below.
 
-![keyGen](https://github.com/LadonAl/LEA-FPGA/blob/master/LEA-FPGA-ProcessA.png?raw=true)
+![keyGen](https://github.com/LadonAl/LEA-FPGA/blob/master/LEA-FPGA-KeyGenerator.png?raw=true)
 
 The shifted 32-bit groups are then fed into processing blocks. Each of these blocks prodecue a vector of 32-bit parts that are letar fed into a rewiring block that groups the vector elements into 24 different 192-bit outputs (round keys)
 

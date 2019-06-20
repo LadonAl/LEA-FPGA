@@ -24,5 +24,5 @@ The shifted 32-bit groups are then fed into processing blocks. Each of these blo
 ## Processing Blocks
 As mentioned, the processing blocks are resposible of generating vectors of 32-bit data.
 This module follows the following formula: 
-[img]http://www.sciweavers.org/tex2img.php?eq=%5C%7B%5BA%20%2B%20%28%5Cdelta%20%5Bi%5C%20mod%5C%204%5D%5C%20%3C%3C%5EC%20i%29%5D%5C%20mod%5C%202%5E%7B32%7D%5C%7D%5C%20%3C%3C%5Ec%201&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]
+![img](http://www.sciweavers.org/tex2img.php?eq=%5C%7B%5BA%20%2B%20%28%5Cdelta%20%5Bi%5C%20mod%5C%204%5D%5C%20%3C%3C%5EC%20i%29%5D%5C%20mod%5C%202%5E%7B32%7D%5C%7D%5C%20%3C%3C%5Ec%201&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 

@@ -12,8 +12,7 @@ The final product should have 2 input ports that recieve the 128-bit input key a
 
 # Update History
 
-20-Jun-2019:
-============
+#### 20-Jun-2019: 
 the project simpy includes the key generator module. This module so far only include combinational logic because I tried my best to avoid using memories. The project has not been tested on a proper FPGA yet.  
 
 ## KeyGen

@@ -20,6 +20,13 @@ the project simpy includes the key generator module. This module so far only inc
 #### <<i With 'C' on top:
 Circular shift of i bits to the left 
 
+#### 𝛿:
+An array of parameters:
+δ[0] = 0xc3efe9db, δ[1] = 0x44626b02,
+δ[2] = 0x79e27c8a, δ[3] = 0x78df30ec,
+δ[4] = 0x715ea49e, δ[5] = 0xc785da0a,
+δ[6] = 0xe04ef22a, δ[7] = 0xe5c40957.
+
 
 ## KeyGen
 KeyGen or the key generator is respinsible of producing 24 192-bit round keys based on the input 128-bit key. Initially, the key bits are wired in groups of 32 bits (A, B, C, D) each of which gets circular shifted 8 bits to the left.

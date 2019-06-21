@@ -20,11 +20,15 @@ the project simpy includes the key generator module. This module so far only inc
 #### <<i With 'C' on top:
 Circular shift of i bits to the left 
 
-#### 𝛿:
-An array of parameters:
+#### 𝛿, 𝛿[n]:
+An array of parameters defined such as:
+
 δ[0] = 0xc3efe9db, δ[1] = 0x44626b02,
+
 δ[2] = 0x79e27c8a, δ[3] = 0x78df30ec,
+
 δ[4] = 0x715ea49e, δ[5] = 0xc785da0a,
+
 δ[6] = 0xe04ef22a, δ[7] = 0xe5c40957.
 
 

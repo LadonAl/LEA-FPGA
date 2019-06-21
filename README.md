@@ -13,7 +13,13 @@ The final product should have 2 input ports that recieve the 128-bit input key a
 # Update History
 
 #### 20-Jun-2019: 
-the project simpy includes the key generator module. This module so far only include combinational logic because I tried my best to avoid using memories. The project has not been tested on a proper FPGA yet.  
+the project simpy includes the key generator module. This module so far only include combinational logic because I tried my best to avoid using memories. The project has not been tested on a proper FPGA yet. 
+
+# Symbols Used
+
+#### <<i With 'C' on top:
+Circular shift of i bits to the left 
+
 
 ## KeyGen
 KeyGen or the key generator is respinsible of producing 24 192-bit round keys based on the input 128-bit key. Initially, the key bits are wired in groups of 32 bits (A, B, C, D) each of which gets circular shifted 8 bits to the left.

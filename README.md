@@ -20,6 +20,14 @@ the project simpy includes the key generator module. This module so far only inc
 #### <<i With 'C' on top:
 Circular shift of i bits to the left 
 
+#### something[n]:
+Accessing the n'th index in an array or the n'th bit of a variable (vector in Verilog)
+
+#### something[n:m]:
+Accessing a slice of an array that starts from n and ends at m (inclusive of both). 
+
+For example if i = 7 = 0b111 => i[1:0] = 0b11 = 3
+
 #### 𝛿, 𝛿[n]:
 An array of parameters defined such as:
 

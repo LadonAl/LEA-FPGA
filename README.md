@@ -5,6 +5,9 @@ An attempt to make the LEA 128-bit cipher on an FPGA.
 My name is Alaa, a computer engineer that is interested in math, computer hardware, FPGA's, and some IoT development. 
 I am always eager to learn more about FPGA development, if you have a project that you would like me to participate in, please hit me up.
 
+# Acknowledgments:
+This project is a collaboration between myself and ![@Mumtaz667](https://github.com/Mumtaz667).
+
 # This Project
 As the name implies, this is an attempt to create the LEA-128-bit cipher on an FPGA.Please not that I have no previous experience in cryptography. I simply followed the algotithm in order to come up with this design. 
 

@@ -63,4 +63,8 @@ The block diagram could be found below:
 ![processA](https://github.com/LadonAl/LEA-FPGA/blob/master/LEA-FPGA-ProcessA.png?raw=true)
 
 
+# References:
+Hong D., Lee JK., Kim DC., Kwon D., Ryu K.H., Lee DG. (2014) LEA: A 128-Bit Block Cipher for Fast Encryption on Common Processors. In: Kim Y., Lee H., Perrig A. (eds) Information Security Applications. WISA 2013. Lecture Notes in Computer Science, vol 8267. Springer, Cham
+
+
 

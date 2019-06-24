@@ -80,7 +80,7 @@ module keyGen(
 			 TD[20] =  TD20, TD[21] = TD21, TD[22] = TD22, TD[23] = TD23;
 
 	//wiring and assembling the final keys  		 
-	reg [191:0] RK [23:0];
+	reg [191:0] RK [0:23];
 
 	assign RK0  = RK[ 0], RK1  = RK[ 1], RK2  = RK[ 2], RK3  = RK[ 3],  
 			 RK4  = RK[ 4], RK5  = RK[ 5], RK6  = RK[ 6], RK7  = RK[ 7],  

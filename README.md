@@ -16,7 +16,11 @@ The final product should have 2 input ports that recieve the 128-bit input key a
 # Update History
 
 #### 20-Jun-2019: 
-the project simpy includes the key generator module. This module so far only include combinational logic because I tried my best to avoid using memories. The project has not been tested on a proper FPGA yet. 
+The project simpy includes the key generator module. This module so far only include combinational logic because I tried my best to avoid using memories. The project has not been tested on a proper FPGA yet. 
+
+#### 24-Jun-2019: 
+The project now includes the encryption rounds processor. It also supports decryption.
+
 
 # Symbols Used
 
@@ -43,6 +47,14 @@ An array of parameters defined such as:
 δ[6] = 0xe04ef22a, δ[7] = 0xe5c40957.
 
 # Project Explanation
+The system takes a 128-bit input text and key and produces a 128-bit ciphertext based on them. It is also able to decrypt cypher text based on the the Encrypt-1/Decrypt input flag. 
+
+As shown below, the design consists of 2 main parts:
+* key generator
+* round processor
+
+![topModule](https://github.com/LadonAl/LEA-FPGA/blob/master/LEA-FPGA-top.png?raw=true)
+
 
 ## KeyGen
 KeyGen or the key generator is respinsible of producing 24 192-bit round keys based on the input 128-bit key. Initially, the key bits are wired in groups of 32 bits (A, B, C, D) each of which gets circular shifted 8 bits to the left.

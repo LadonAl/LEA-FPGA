@@ -46,6 +46,9 @@ An array of parameters defined such as:
 
 δ[6] = 0xe04ef22a, δ[7] = 0xe5c40957.
 
+#### ^:
+Bit-wise XOR
+
 # Project Explanation
 The system takes a 128-bit input text and key and produces a 128-bit ciphertext based on them. It is also able to decrypt cypher text based on the the Encrypt-1/Decrypt input flag. 
 

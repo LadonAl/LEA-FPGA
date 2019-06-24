@@ -86,9 +86,13 @@ This module also includes decryption units and takes an encryption/decryption fl
 ### RoundU's
 This module takes its input from either a similar roundU module, or externally. It breaks it up into 4 32-bit blocks (A, B, C, D) and XOR's those blocks with the assigned 192-bit round key and adds the results based on the following:
 
-* sum0 = (A ^ RK[0]) + (B ^ RK[1]),
-* sum1 = (B ^ RK[2]) + (C ^ RK[3]),
-* sum2 = (C ^ RK[4]) + (D ^ RK[5]);
+* sum0 = (A ^ RK[0]) + (B ^ RK[1])
+* sum1 = (B ^ RK[2]) + (C ^ RK[3])
+* sum2 = (C ^ RK[4]) + (D ^ RK[5])
+
+The output of this unit X is defined such as X = {sum0, sum1, sum2, A}
+
+![roundU](https://github.com/LadonAl/LEA-FPGA/blob/master/LEA-FPGA-RoundU.png?raw=true)
 
 # References:
 Hong D., Lee JK., Kim DC., Kwon D., Ryu K.H., Lee DG. (2014) LEA: A 128-Bit Block Cipher for Fast Encryption on Common Processors. In: Kim Y., Lee H., Perrig A. (eds) Information Security Applications. WISA 2013. Lecture Notes in Computer Science, vol 8267. Springer, Cham

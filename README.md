@@ -56,7 +56,7 @@ As shown below, the design consists of 2 main parts:
 ![topModule](https://github.com/LadonAl/LEA-FPGA/blob/master/LEA-FPGA-top.png?raw=true)
 
 
-## KeyGen
+## Key Generator
 KeyGen or the key generator is respinsible of producing 24 192-bit round keys based on the input 128-bit key. Initially, the key bits are wired in groups of 32 bits (A, B, C, D) each of which gets circular shifted 8 bits to the left.
 
 The block diagram could be found below.
@@ -74,6 +74,21 @@ The block diagram could be found below:
 
 ![processA](https://github.com/LadonAl/LEA-FPGA/blob/master/LEA-FPGA-ProcessA.png?raw=true)
 
+
+## Rounds
+This module connects multiple roundU's (round units). Each round unit includes a single encryption round. 
+
+This module also includes decryption units and takes an encryption/decryption flag that does not appear in the diagram below. Decryption is simply encryption where the first encryption unit recieves the last round key rather than the opposite. And produces the output based on the opposite arithmetic expression used for encryption.
+
+![rounds](https://github.com/LadonAl/LEA-FPGA/blob/master/LEA-FPGA-Rounds.png?raw=true)
+
+
+### RoundU's
+This module takes its input from either a similar roundU module, or externally. It breaks it up into 4 32-bit blocks (A, B, C, D) and XOR's those blocks with the assigned 192-bit round key and adds the results based on the following:
+
+* sum0 = (A ^ RK[0]) + (B ^ RK[1]),
+* sum1 = (B ^ RK[2]) + (C ^ RK[3]),
+* sum2 = (C ^ RK[4]) + (D ^ RK[5]);
 
 # References:
 Hong D., Lee JK., Kim DC., Kwon D., Ryu K.H., Lee DG. (2014) LEA: A 128-Bit Block Cipher for Fast Encryption on Common Processors. In: Kim Y., Lee H., Perrig A. (eds) Information Security Applications. WISA 2013. Lecture Notes in Computer Science, vol 8267. Springer, Cham
